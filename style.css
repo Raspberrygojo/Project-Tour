@@ -266,6 +266,111 @@ footer a:hover {
     color: #242424;
 }
 
+@media (prefers-color-scheme: dark) {
+
+    .Hero{
+        
+        background-image: url(Images/pexels-alexfu-1229102.jpg);
+    
+    }
+    * {
+        color: #eaeaea;
+    }
+
+    
+
+    .Error {
+        background-color: #F18F01;
+        color: #e4e4e4;
+    }
+
+    .Header {
+        background-color: #1d3b2b;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .Start {
+        color: #F0E9D2;
+    }
+
+    .Middle a {
+        color: #eaeaea;
+    }
+
+    .Hero {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+
+    .Heading , .Cursive-Text{
+        color: #ffffff;
+    }
+
+    .Popular {
+        background-color: #333;
+    }
+
+    .Package-Box ,.Places a .Card{
+        background-color: #444;
+    }
+    .Popular .Places p{
+        color: #ffffff;
+    }
+
+    .Card {
+        background-color: #444;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+    }
+
+    .Card p {
+        color: #eaeaea;
+    }
+
+    .Card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 24px rgba(255, 255, 255, 0.1);
+    }
+
+    .Ratings{
+        background-color: #222;
+    }
+
+    .Ratings .Rating-Box{
+        background-color: #444;
+    }
+
+    .Rating-Box {
+        background-color: #333;
+        box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+    }
+
+    .Packages {
+        background-color: #333;
+    }
+
+    .Package-Box {
+        background-color: #444;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    footer {
+        background-color: #222;
+        color: #fff;
+    }
+
+    footer a {
+        color: #eaeaea;
+    }
+
+    footer a:hover {
+        color: #ffffff;
+    }
+    
+    
+
+}
+
+
 /* Location Css */
 .Content {
     display: flex;
@@ -406,4 +511,20 @@ footer a:hover {
         height: auto;
     }
     
+}
+
+/* anims */
+
+.fade-in {
+  animation: Load-Animation 0.5s ease-out;
+}
+@keyframes Load-Animation {
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
 }
